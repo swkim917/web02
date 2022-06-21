@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+.logo {
+	width: 100px;
+	margin: 10px;
+}
+
+.container {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header {
+	width: 1024px;
+	height: 300px;
+}
+
+.backimg {
+	width: 1024px;
+	height: 250px;
+	background-image: url("img/car.jpg");
+	background-size: cover;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.menu {
+	background-color: gold;
+	height: 40px;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;	
+	align-items: center;
+}
+
+.menu>li {
+	transition: all 0.2s;
+	padding: 5px 0;
+	width: 150px;
+	text-align: center;
+}
+
+.menu > li:hover {
+	background-color: rgb(19, 4, 153);
+	color: #fff;
+}
+
+.submenu {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	width: 150px;
+	margin-top: 10px;
+}
+
+.submenu>li {
+	padding: 10px 0;
+	transition: all 0.1s;
+	background-color: cadetblue;
+}
+
+.submenu>li:hover {
+	background-color: #ffffff;
+	color: black;
+}
+
+section {
+	width: 1024px;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+h4 {
+	margin-bottom: 10px;
+}
+
+article {
+	margin: 10px;
+	border: 1px solid lightgray;
+	padding: 10px;
+}
+
+hr {
+	margin: 15px  0;
+}
+
+footer {
+	width: 1024px;
+	text-align: center;
+	background-color: beige;
+	height: 40px;
+	line-height: 40px;
+}
